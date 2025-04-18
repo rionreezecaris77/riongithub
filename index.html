@@ -10,29 +10,31 @@
       background-color: #fff0f5;
       color: #333;
       margin: 0;
-      height: 100vh;
+      padding: 0;
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
-      overflow: hidden;
+      align-items: center;
+      justify-content: center;
     }
 
     .click-text {
       font-size: 1.2rem;
       margin-bottom: 1rem;
-      color: black; /* Changed to black */
+      color: black;
       font-weight: bold;
       text-align: center;
     }
 
     .heart-container {
-      text-align: center;
+      font-size: 5rem;
+      color: #d63384;
       cursor: pointer;
       animation: pulse 1.5s infinite;
-      font-size: 5rem;
-      transition: transform 0.3s ease;
-      color: #d63384;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
     .letter {
@@ -43,6 +45,7 @@
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       border-radius: 1rem;
       animation: fadeIn 1s ease forwards;
+      margin: 2rem;
     }
 
     h1 {
@@ -69,20 +72,14 @@
     }
 
     @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        transform: scale(1);
-      }
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
 <body>
-  <div id="heartSection">
+  <div id="heartSection" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
     <div class="click-text">Click me!</div>
     <div class="heart-container" onclick="openLetter()">❤️</div>
   </div>
@@ -90,18 +87,8 @@
   <div class="letter" id="letter">
     <h1>Dear You,</h1>
     <p>
-   Hii, you asked me before why I love you and I couldn’t tell you everything, but here it is. I love you because you’re the first and the last girl who made me feel like this, a feeling that made me so happy. And everyday when we talk, it just makes my day. I never felt like this to anyone, not even my old crushes, but you, you made me feel very special, very valued. And I felt that you really, really like me. When we both liked each other, that was the best thing that happened to me. And that first hug, it was the best hug for me. I felt like my world stopped and everything in me was just so happy. That was a new feeling to me, and I will always miss that first time hugging you, ‘cause that’s the most special hug from all our hugs.
-And that very first kiss, honestly that was my first time getting kissed by a girl and I was so happy it was from someone I really, really love. I honestly never expected that kiss, but going home, I kept thinking of it and I was very kilig. I also love you because of who you are. You’re always this kind, warm-hearted, caring, gentle, loving, super pretty, honest, and someone who loves and respects God. There’s so much I love about you and some is just stuck in my mind and I can’t even say it.
-I also thank God ‘cause He gave me someone like you and you helped me get closer to God. I love it that whenever we argue or something’s wrong, we always have the effort to fix it within the day and we don’t let it mess up what we have. And I really love that you’re a good sister to your siblings. Observing how you love them, it’s just so sweet to see how much you care about them and I really like that from you.
-I also love the way you hold my hand even when I don’t ask or I don’t do it first and also when you hug and kiss me. It just makes me feel that you really love me. I also love that you’re someone I can trust. You’re open even with the past mistakes or relationships you had and it makes me feel that I can really, really trust you and that I’m safe with you. And I really love that you’re so patient with me even though I’m so stupid that I’m always causing arguments. I love it that you’re not getting tired of me and that you still continue to love me. (I’m sorry if I’m like that. I know it’s my first time, but don’t worry, everyday I’ll be better for you, talaga.)
-I also like the way you react when we eat, it’s just so cute and I’m just happy when I see you like that. And your smile. And those eyes... OHH NO ☺️☺️. I also love it when we sleep call. When that happened to me, the first time, it made me feel so safe and comfortable sayo. Oh, and our devotions together, I really like it when we do that. I like it that we put Christ in the center of our relationship.
-And I also love you because starting when we liked each other, I never felt so comfortable and sayo, I can be myself, grabe. And I also love it when I’m sad because you did something wrong and I tell you why, and you accepted your mistake and you said if I have more na I don’t like about you, so you can change it and be better for me. Damn, I really liked that. I also love when we’re together and everything in my mind just fades away because I’m with you. I really like that feeling ‘cause I’m safe with you.
-Okay, mejo long na, but you should know I love you so, so much and sure na sure talaga ako sayo. I never want to lose you. May we not get tired of each other and let’s love each other to the fullest. I pray that the Lord will guide us with everything and that our love for each other is always sincere. Basta for me ill never get tired of loving you
-I LOVE YOU SO SO MUCHHH MY BABYCAKES HEHEHEHEH.
-
+      Hii, you asked me before why I love you and I couldn’t tell you everything, but here it is. I love you because you’re the first and the last girl who made me feel like this, a feeling that made me so happy. And everyday when we talk, it just makes my day. I never felt like this to anyone, not even my old crushes, but you, you made me feel very special, very valued. And I felt that you really, really like me. When we both liked each other, that was the best thing that happened to me. And that first hug, it was the best hug for me. I felt like my world stopped and everything in me was just so happy. That was a new feeling to me, and I will always miss that first time hugging you, ‘cause that’s the most special hug from all our hugs. And that very first kiss, honestly that was my first time getting kissed by a girl and I was so happy it was from someone I really, really love. I honestly never expected that kiss, but going home, I kept thinking of it and I was very kilig. I also love you because of who you are. You’re always this kind, warm-hearted, caring, gentle, loving, super pretty, honest, and someone who loves and respects God. There’s so much I love about you and some is just stuck in my mind and I can’t even say it. I also thank God ‘cause He gave me someone like you and you helped me get closer to God. I love it that whenever we argue or something’s wrong, we always have the effort to fix it within the day and we don’t let it mess up what we have. And I really love that you’re a good sister to your siblings. Observing how you love them, it’s just so sweet to see how much you care about them and I really like that from you. I also love the way you hold my hand even when I don’t ask or I don’t do it first and also when you hug and kiss me. It just makes me feel that you really love me. I also love that you’re someone I can trust. You’re open even with the past mistakes or relationships you had and it makes me feel that I can really, really trust you and that I’m safe with you. And I really love that you’re so patient with me even though I’m so stupid that I’m always causing arguments. I love it that you’re not getting tired of me and that you still continue to love me. (I’m sorry if I’m like that. I know it’s my first time, but don’t worry, everyday I’ll be better for you, talaga.) I also like the way you react when we eat, it’s just so cute and I’m just happy when I see you like that. And your smile. And those eyes... OHH NO ☺️☺️. I also love it when we sleep call. When that happened to me, the first time, it made me feel so safe and comfortable sayo. Oh, and our devotions together, I really like it when we do that. I like it that we put Christ in the center of our relationship. And I also love you because starting when we liked each other, I never felt so comfortable and sayo, I can be myself, grabe. And I also love it when I’m sad because you did something wrong and I tell you why, and you accepted your mistake and you said if I have more na I don’t like about you, so you can change it and be better for me. Damn, I really liked that. I also love when we’re together and everything in my mind just fades away because I’m with you. I really like that feeling ‘cause I’m safe with you. Okay, mejo long na, but you should know I love you so, so much and sure na sure talaga ako sayo. I never want to lose you. May we not get tired of each other and let’s love each other to the fullest. I pray that the Lord will guide us with everything and that our love for each other is always sincere. Basta for me ill never get tired of loving you I LOVE YOU SO SO MUCHHH MY BABYCAKES HEHEHEHEH.
     </p>
-   
-
     <div class="signature">From Rion</div>
   </div>
 
@@ -109,7 +96,9 @@ I LOVE YOU SO SO MUCHHH MY BABYCAKES HEHEHEHEH.
     function openLetter() {
       document.getElementById('heartSection').style.display = 'none';
       document.getElementById('letter').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
 </body>
 </html>
+
